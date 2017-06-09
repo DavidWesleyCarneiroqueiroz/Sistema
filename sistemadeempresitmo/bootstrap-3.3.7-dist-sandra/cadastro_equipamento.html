@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Sistema de Emprestimo - CTI</title>
+  <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="sistema_de_emprestimo.html">Sistema de Emprestimo</a>
+    </div>
+    <ul class="nav navbar-nav">
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"> Cadastro <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="cadastro_solicitante.html">Solicitante</a></li>
+          <li><a href="cadastro_equipamento.html">Equipamento</a></li>
+        </ul>
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"> Emprestimo <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="emprestimo.html">Saida</a></li>
+          <li><a href="devolucao.html">Entrega</a></li>
+        </ul>
+      </li>
+        <li><a href="consulta.html">Consulta</a></li>
+    </ul>
+  </div>
+</nav>
+
+<h1>Cadastro Equipamento</h1> 
+
+<form action="equipamento.php" method="post">
+	<div class="form-group">
+	Equipamento: <input type="text" name="equipamento" required="required"  class="form-control"></input><br><br>
+	Patrimonio: <input type="text" name="patrimonio" required="required"  class="form-control"></input><br><br>
+	Numero de Serie: <input type="text" name="numero_serie" required="required"  class="form-control"></input><br><br>
+	<input type="submit" /></div>
+
+</form>
+
+</body>

@@ -1,0 +1,48 @@
+<html>
+<head>
+<meta charset="UTF-8">
+	<title>Sistema de Emprestimo Paulista 2</title>
+
+</head>
+	
+<body>
+
+
+<script  language="javascript">
+
+function Login(){
+		var done=0;
+
+		var usuario=document.login-inputs.usuario.value;
+		usuario=usuario.toLowerCase();
+		
+		var senha=document.login-inputs.senha.value;
+		senha=senha.toLowerCase();
+
+		if (usuario=="admin" && senha=="admin") {
+			location="http.sismte_de_emprestimo.html"; done=1;
+		}
+		
+		if (done==0) { alert("Dados incorretos, tente novamente"); }
+	}
+	</script>
+
+<div id="all">
+	<div id="login-box">
+		<div id="login-header">
+			Faça login no sistema
+		</div>
+		<div id="login-inputs">
+			<input type="text" placeholder="Nome de usuário" name=usuario>
+			<br /><br>
+			<input type="password" placeholder="Senha" name=senha>
+		</div>
+		<div id="enviar">
+			<input type="button" onclick="Login()" class="botao" value=Login>
+			<a href="#">Esqueceu a sua senha?</a>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>
